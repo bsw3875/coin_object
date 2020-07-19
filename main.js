@@ -1,7 +1,7 @@
 let coin = {
     state: 0,
     flip: function () {
-        var d = Math.random();
+        let d = Math.random();
         if (d < 0.5) {
             this.state = 0
 
@@ -25,10 +25,10 @@ let coin = {
     toHTML: function () {
         let image = document.createElement('img');
         if (this.state === 0) {
-            image.scr = "images/heads.jpg"
+            image.src = "images/heads.jpg"
 
         } else if (this.state === 1) {
-            image.scr = "images/tails.jpg"
+            image.src = "images/tails.jpg"
         }
         /* 3. Set the properties of this image element to show either face-up
            or face-down, depending on whether this.state is 0 or 1.*/
@@ -36,82 +36,41 @@ let coin = {
     }
 }
 
+//Write a function called display20Flips that uses a loop to flip the coin 
+// times. Each time the coin flips, display the result of each flip as a 
+//string on the page (make use of your toString() method)
+
 
 
 function display20Flips() {
-    let display20Flips = document.getElementsById('flips');
 
-    for (let i = 0; i < display20Flips.length; i++) {
-        // to open all photos in new tabs:
-        // window.open(allImages[i].src, '_blank');
-        display20Flips[i] = 'flip_image';
+    for (let index = 20; index < document.createElement; index++) {
+        flips[index] = flip-image;
     }
-
-
-
-
-
-
-
-
-
-
-
-    // for loop 20 times
-    //coin.flip()
-    //use coin.toString() to show something on html
-    // let i;  
-    // for (i = 0; i < 20; i++) {
-    //result = 20
-    //let coin = 20;
-    //coin.flip = 20
-    //coin.toString()
-    //document.createElement();
-
-    //let i = document.createElement("flips");                                              
-    //document.getElementById("coin").appendChild();    
-
-
-    //console.log(i);
-
-    //return true
 }
 
+
+
+
+//Write a function called display20Images, again using a loop to flip the
+// coin 20 times…but this time instead of displaying the result as a string,
+// display the result of each flip as an HTML IMG element on the page 
+//(make use of your toHTML() method).
 
 
 
 function display20Images() {
 
-    let display20Images = document.getElementsById('img');
+    let images = document.createElement('img');
 
-    for (let i = 0; i < display20Images.length; i++) {
-        // to open all photos in new tabs:
-        // window.open(allImages[i].src, '_blank');
-        display20Images[i] = 'coin-image';
+    for (let index = 20; index < images.length; index++) {
+        images[index] = coin-image;
     }
 
-
-
-
-
-
-
-
-    // for loop 20 times
-    //coin.flip()
-    //use coin.toString() to show something on html
-    // for (i = 0; i < 20; i++)
-    //result = 20
-    // coin.toString() ="heads"|"tails"
-    //document.getElementById().innerHTML = "images"
-    //let i= document.createElement("images");                                               
-    //document.getElementById("coin").appendChild(); 
-    // console.log()
-    // return true
 }
 
 
-
 //}
+
 
 
