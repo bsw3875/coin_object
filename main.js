@@ -43,34 +43,53 @@ let coin = {
 
 
 function display20Flips() {
+    let n = Number
+    let heads = 0, tails = 0;
+    for (let index = 0; index < n; index++) {
 
-    for (let index = 20; index < document.createElement; index++) {
-        flips[index] = flip-image;
-    }
+
+        if (Math.random() < 20) {
+            heads++;
+        } else {
+            tails++;
+        }
+
+
+
+        //citation: bmr549/coinflip.js on github.com
+
+
+        //Write a function called display20Images, again using a loop to flip the
+        // coin 20 times…but this time instead of displaying the result as a string,
+        // display the result of each flip as an HTML IMG element on the page 
+        //(make use of your toHTML() method).
+
+
+
+        function display20Images() {
+
+            let result = document.getElementById("pic");
+            let displayImages = Math.floor(Math.random() * 20);
+            console.log(x);
+            if (displayImages = 20) {
+                document.getElementById("Coin").innerHTML = "Heads"
+
+                result.innerHTML = "<img src=\"images/heads.jpg\" />";
+            }
+            else {
+                document.getElementById("Coin").innerHTML = "Tails";
+                result.innerHTML = "<img src=\"images/tails.jpg\" />";
+            }
+        }
+
+        //citation:https://stackoverflow.com/
+
+
+
+    };
+
 }
 
-
-
-
-//Write a function called display20Images, again using a loop to flip the
-// coin 20 times…but this time instead of displaying the result as a string,
-// display the result of each flip as an HTML IMG element on the page 
-//(make use of your toHTML() method).
-
-
-
-function display20Images() {
-
-    let images = document.createElement('img');
-
-    for (let index = 20; index < images.length; index++) {
-        images[index] = coin-image;
-    }
-
-}
-
-
-//}
 
 
 
